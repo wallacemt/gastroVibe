@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "name": "Abará da Vovó",
+      "description": "Acarajé e abará em diversos tamanhos com destaque ao servido no prato, pudim de tapioca, em espaço tranquilo.",
+      "address": "R. Direita de Santo Antônio, 18 - Santo Antônio Além do Carmo, Salvador - BA",
+      "phone": "+55 71 98749-3320",
+      "opening_hours": "Ter-Sab: 15h - 22h",
+      "images": [
+        "https://lh5.googleusercontent.com/p/AF1QipMQ8E2OCgYGD0jzcNgp9PH_cSHl8aNY5DWEXmm7=s1024",
+        "https://lh5.googleusercontent.com/p/AF1QipMuffFTNLNsLVazWec5tC-feFftZC10AmvF5jmw=s677-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipPE-hgZ3LfNp3ppx-N7zaGdk_8krXkqGBRSYP1d=s677-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipMYcLWRzRkjqTsXpK9nCLGRUDdtoEhRcEG9V5nX=s516-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipO9ePTrUO9Qk-1OhZFf_qG5X1ZEoGGJ1HDVGipK=s677-k-no"
+      ],
+      "googleMapsLink": "https://maps.app.goo.gl/iG4dzsL6C6cnyQTy5"
+    },
+    {
+      "id": 2,
+      "name": "Cabana do Camarão",
+      "description": "Pratos regionais com um toque contemporâneo.",
+      "address": "Avenida Principal, 456 - Salvador, BA",
+      "phone": "+55 71 99876-5432",
+      "opening_hours": "Todos os dias: 10h - 21h",
+      "images": [
+        "https://lh5.googleusercontent.com/p/AF1QipNjpF9nwVjT1sAWNwZPaJ6YdCIo2C2IJhwEIzAU=s451-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipNI9iRxf-hUVD6I2UpZsa8DSSP3TRLLPNTgj1bR=s512",
+        "https://lh5.googleusercontent.com/p/AF1QipPmJ5XNSHRf2m-kOJeQcX-W8qYQFLxYc3gJapuK=s516-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipNu-6bsW2N0hR5E5sXXZezNqrJzoyg8kpybR16d=s677-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipO-hrawyowUGQn-gkRDfWKFihXPsOHjHU8p5CW3=s387-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipPhPUz96OICDFl5taOkZxskYhot8JOIijQxLtzE=s508-k-no"
+      ],
+      "googleMapsLink": "https://www.google.com/maps/place/Recanto+do+Sabor/",
+      "menu": [
+        {
+          "name": "Bobó de Camarão",
+          "price": "R$ 40,00"
+        },
+        {
+          "name": "Caruru",
+          "price": "R$ 25,00"
+        }
+      ]
+    }
+  ]
+  

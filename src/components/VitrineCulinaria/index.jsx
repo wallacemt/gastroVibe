@@ -1,41 +1,70 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar } from "../Navbar";
 import { BannerDeDivulgacao } from "./BannerDivulgação";
-
-const restaurants = [
-    {
-        name: "Abara da VOVO",
-        images: [
-            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdDdOWqYtfk3QuXyKeCucn-0KZHGoLqywSsOLCBblsTj71MmY6_tcqknz8XKR30Mgd4TLS98ebl6IPjqTkkx2aVlau6hVhf1cSZ1_lbA1L9BQ2KcT3j3aG36agFx430u_3EN2sROA54sl1mBetckMbzwp_jBHbnPPLkMnrm1vX-Ymv7TL-6C&key=AIzaSyBkz98IqbnFsakaYRZT1HGc7oFw27TBE7Q",
-            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdDdOWqs4N4cDEZ77nYty4Ce1GUeq5DP5bPuhUpbIzxkq09001dSBwtyOCghHpNAzCn8ybPHKbNE0U8Li5YdizveEruTz6JqdW3VaxxX7FD6EkPLqYuYJB3wU5domzb88s1G40q4SBxQq44lYHnnfNSJAzHvfwYp9fm3ksKprWc61JIGPIjC&key=AIzaSyBkz98IqbnFsakaYRZT1HGc7oFw27TBE7Q",
-            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdDdOWrJ5RKYnOaYjnRck3dX_wDB2sNRIILgnVZjfTQYvuOpQ6aGkxvz9Hnl30XuyNQRMMxv7TFyYPp8jejkuvbhNdkgdbhCqFPCHxOZUwLEjBxWEKsPXDVlEmPS6oJRhkg8dLbqkhyJeplLjozB_8GF7Ih69nUeRUq7IG-DsR0ZlJu7hdc4&key=AIzaSyBkz98IqbnFsakaYRZT1HGc7oFw27TBE7Q"
-        ],
-        description: "Deliciosa comida soteropolitana com pratos típicos de Salvador.",
-        address: "Rua Exemplo, 123, Salvador - BA",
-        googleMapsLink: "https://www.google.com/maps/place/Restaurante+Exemplo+1"
-    },
-    {
-        name: "Abara da VOVO",
-        images: [
-            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdDdOWqYtfk3QuXyKeCucn-0KZHGoLqywSsOLCBblsTj71MmY6_tcqknz8XKR30Mgd4TLS98ebl6IPjqTkkx2aVlau6hVhf1cSZ1_lbA1L9BQ2KcT3j3aG36agFx430u_3EN2sROA54sl1mBetckMbzwp_jBHbnPPLkMnrm1vX-Ymv7TL-6C&key=AIzaSyBkz98IqbnFsakaYRZT1HGc7oFw27TBE7Q",
-            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdDdOWqs4N4cDEZ77nYty4Ce1GUeq5DP5bPuhUpbIzxkq09001dSBwtyOCghHpNAzCn8ybPHKbNE0U8Li5YdizveEruTz6JqdW3VaxxX7FD6EkPLqYuYJB3wU5domzb88s1G40q4SBxQq44lYHnnfNSJAzHvfwYp9fm3ksKprWc61JIGPIjC&key=AIzaSyBkz98IqbnFsakaYRZT1HGc7oFw27TBE7Q",
-            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AdDdOWrJ5RKYnOaYjnRck3dX_wDB2sNRIILgnVZjfTQYvuOpQ6aGkxvz9Hnl30XuyNQRMMxv7TFyYPp8jejkuvbhNdkgdbhCqFPCHxOZUwLEjBxWEKsPXDVlEmPS6oJRhkg8dLbqkhyJeplLjozB_8GF7Ih69nUeRUq7IG-DsR0ZlJu7hdc4&key=AIzaSyBkz98IqbnFsakaYRZT1HGc7oFw27TBE7Q"
-        ],
-        description: "Deliciosa comida soteropolitana com pratos típicos de Salvador.",
-        address: "Rua Exemplo, 123, Salvador - BA",
-        googleMapsLink: "https://www.google.com/maps/place/Restaurante+Exemplo+1"
-    },
-];
+import { Loading } from "../Loading";
 
 export const VitrineCulinaria = () => {
+    const [restaurants, setRestaurants] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchRestaurants = async () => {
+            try {
+                const response = await fetch("/restaurantes.json");
+                if (!response.ok) {
+                    throw new Error(
+                        `Erro ao carregar os dados: ${response.statusText}`
+                    );
+                }
+                const data = await response.json();
+                setRestaurants(data);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchRestaurants();
+    }, []);
+
+    if (loading) {
+        return <Loading text="Carregando restaurantes..." />;
+    }
+
+    if (error) {
+        return (
+            <div className="text-center py-10 text-vermelho">Erro: {error}</div>
+        );
+    }
+
     return (
         <>
-            <Navbar /> 
+            <Navbar />
+
+            <div className="py-5">
+                <h2 className="text-6xl font-semibold text-center text-principal mt-24 font-playfair relative">
+                    <span className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 text-destaque text-3xl">
+                        &#9733;
+                    </span>
+                    <span className="block text-xl font-light text-cinzaEscuro tracking-wide uppercase mb-2">
+                        Explore os sabores
+                    </span>
+                    Vitrine Culinária
+                    <div className="w-1/2 mx-auto mt-4 border-t-4 border-destaque"></div>
+                </h2>
+            </div>
+
             <div className="px-6 py-10">
-                <h2 className="text-4xl font-semibold text-center mb-10 text-principal">Vitrine Culinária</h2>
-                {restaurants.map((restaurant, index) => (
-                    <BannerDeDivulgacao key={index} restaurant={restaurant} />
-                ))}
+                <div className="flex flex-wrap justify-center gap-6">
+                    {restaurants.map((restaurant, index) => (
+                        <BannerDeDivulgacao
+                            key={index}
+                            restaurant={restaurant}
+                        />
+                    ))}
+                </div>
             </div>
         </>
     );
