@@ -18,10 +18,10 @@
     {
       "id": 2,
       "name": "Cabana do Camarão",
-      "description": "Pratos regionais com um toque contemporâneo.",
-      "address": "Avenida Principal, 456 - Salvador, BA",
+      "description": "Restaurante caseiro com decoração rústica oferece moquecas, pastéis e mais, além de cervejas e música ao vivo.",
+      "address": "Av. Afrânio Peixoto - Itacaranha, Salvador - BA",
       "phone": "+55 71 99876-5432",
-      "opening_hours": "Todos os dias: 10h - 21h",
+      "opening_hours": "Todos os dias: 11:30h - 18h sexta-feira: 11:30h - 23h domingo: 11h - 18h",
       "images": [
         "https://lh5.googleusercontent.com/p/AF1QipNjpF9nwVjT1sAWNwZPaJ6YdCIo2C2IJhwEIzAU=s451-k-no",
         "https://lh5.googleusercontent.com/p/AF1QipNI9iRxf-hUVD6I2UpZsa8DSSP3TRLLPNTgj1bR=s512",
@@ -30,17 +30,7 @@
         "https://lh5.googleusercontent.com/p/AF1QipO-hrawyowUGQn-gkRDfWKFihXPsOHjHU8p5CW3=s387-k-no",
         "https://lh5.googleusercontent.com/p/AF1QipPhPUz96OICDFl5taOkZxskYhot8JOIijQxLtzE=s508-k-no"
       ],
-      "googleMapsLink": "https://www.google.com/maps/place/Recanto+do+Sabor/",
-      "menu": [
-        {
-          "name": "Bobó de Camarão",
-          "price": "R$ 40,00"
-        },
-        {
-          "name": "Caruru",
-          "price": "R$ 25,00"
-        }
-      ]
+      "googleMapsLink": "https://maps.app.goo.gl/D7yMiw2gaNcJcxjr9"
     }
   ]
   
