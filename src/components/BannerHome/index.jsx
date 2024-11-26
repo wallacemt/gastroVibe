@@ -12,7 +12,7 @@ export const BannerHome = () => {
     }, []);
 
     return (
-        <div className="relative w-full h-screen bg-[url('./back-home.jpg')] bg-cover bg-center">
+        <div className="relative w-full h-screen bg-[url('/back-home.jpg')] bg-cover bg-center">
             <div className="absolute inset-0 bg-black opacity-45 blur-md"></div>
             
             <div className="relative z-10 flex items-center justify-center h-full text-center flex-col px-2 sm:px-8">

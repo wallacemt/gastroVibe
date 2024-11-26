@@ -18,7 +18,7 @@ export const Navbar = () => {
                     onClick={() => navigate("/")}
                 >
                     <div
-                        className="bg-[url('./logo.png')] bg-no-repeat bg-contain w-[60px] h-[60px] transition-all duration-500 hover:scale-150"
+                        className="bg-[url('/logo.png')] bg-no-repeat bg-contain w-[60px] h-[60px] transition-all duration-500 hover:scale-150"
                         aria-label="GastroVibe logo"
                     ></div>
 
