@@ -4,11 +4,15 @@ import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
+import Aos from "aos";
 
 export const BannerDeDivulgacao = ({ restaurant }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [loadedImages, setLoadedImages] = useState({});
 
+    React.useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
     const toggleDropdown = () => setIsOpen(!isOpen);
 
     const handleImageLoad = (index) => {
@@ -19,7 +23,7 @@ export const BannerDeDivulgacao = ({ restaurant }) => {
     };
 
     return (
-        <div className="relative w-full max-w-[600px] mb-10  rounded-lg">
+        <div className="relative w-full max-w-[600px] mb-10  rounded-lg overflow-hidden" data-aos="fade-left ">
             <h2 className="text-3xl font-bold font-cormorant  text-principal text-center mb-4 border-b-2 border-y-destaque">
                 {restaurant.name}
             </h2>
@@ -41,7 +45,7 @@ export const BannerDeDivulgacao = ({ restaurant }) => {
             >
                 {restaurant.images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative w-full h-[400px]">
+                        <div className="relative w-full h-[400px]" data-aos="fade-up">
                             {!loadedImages[index] && (
                                 <div className="absolute inset-0 bg-gray-300 flex items-center justify-center rounded-lg">
                                     <span className="text-gray-500">

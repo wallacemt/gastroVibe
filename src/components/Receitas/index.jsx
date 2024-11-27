@@ -1,43 +1,31 @@
-import React, { useEffect, useState } from "react";
-import { BannerDeDivulgacao } from "./BannerDivulgação";
-import { Loading } from "../Loading";
+import {useState, useEffect} from "react";
 import { Navbar } from "../Navbar";
-export const VitrineCulinaria = () => {
-    const [restaurants, setRestaurants] = useState([]);
+import { BannerReceitass } from "./BannerReceitas";
+import { Loading } from "../Loading";
+export const Receitas = () => {
+    const [recipes, setRecipes] = useState([]);
+    
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
     useEffect(() => {
-        const fetchRestaurants = async () => {
+        const fetchReceitas = async () => {
             try {
-                const response = await fetch("/restaurantes.json");
-                if (!response.ok) {
-                    throw new Error(
-                        `Erro ao carregar os dados: ${response.statusText}`
-                    );
+                const response = await fetch("/receitas.json");
+                if(!response.ok) {
+                    throw new Error("Erro ao carregar as receitas");
                 }
                 const data = await response.json();
-                setRestaurants(data);
+                setRecipes(data);
             } catch (err) {
-                setError(err.message);
-            } finally {
+                console.log(err);
+            }finally {
                 setLoading(false);
             }
-        };
-
-        fetchRestaurants();
+        }
+        fetchReceitas();
     }, []);
-
     if (loading) {
-        return <Loading text="Carregando restaurantes..." />;
+        return <Loading text="Carregando receitas..." />;
     }
-
-    if (error) {
-        return (
-            <div className="text-center py-10 text-vermelho">Erro: {error}</div>
-        );
-    }
-
     return (
         <>
             <Navbar />
@@ -49,21 +37,21 @@ export const VitrineCulinaria = () => {
                     <span className="block text-xl font-light text-cinzaEscuro tracking-wide uppercase mb-2">
                         Explore os sabores
                     </span>
-                    Vitrine Culinária
+                    Receitas Típicas
                     <div className="w-1/2 mx-auto mt-4 border-t-4 border-destaque"></div>
                 </h2>
             </div>
 
             <div className="px-6 py-10">
                 <div className="flex flex-wrap justify-center gap-6">
-                    {restaurants.map((restaurant, index) => (
-                        <BannerDeDivulgacao
-                            key={index}
-                            restaurant={restaurant}
+                    {recipes.map((recipes) => (
+                        <BannerReceitass
+                            key={recipes.id}
+                            recipe={recipes}
                         />
                     ))}
                 </div>
             </div>
         </>
-    );
-};
+    )
+}

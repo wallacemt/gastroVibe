@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Acarajé",
+        "description": "O acarajé é uma especialidade da gastronomia afro-brasileira, feita de uma bolinha de massa de feijão fradinho, cebola, sal e outros temperos, frita no azeite de dendê. Pode ser simples ou recheada. A combinação mais usada é de acarajé recheado de vatapá, apesar de que, agora modernizado, aceita, atualmente, muitos e variados outros recheios.",
+        "images": [
+            "https://static.itdg.com.br/images/360-240/cf3a57518454231bf80b2e74037068e4/3158-shutterstock-2156868181.jpg",
+            "https://static.itdg.com.br/images/360-240/cf3a57518454231bf80b2e74037068e4/3158-shutterstock-2156868181.jpg"
+        ],
+        "video": "https://www.youtube.com/embed/uqO8N1-HbSE?si=kBMYTmFKDfIKiJxn",
+        "ingredients": [
+            "500 g de feijão fradinho cru",
+            "Sal a gosto",
+            "500 ml de óleo",
+            "2 xícaras de chá de vatapá",
+            "500 g de cebola",
+            "1 cebola pequena com casca",
+            "500 ml de azeite de dendê",
+            "150 g de camarão seco"
+        ],
+        "method_of_preparation": "Em uma tigela grande, hidrate o feijão fradinho quebrado com bastante água. Ao hidratar, o feijão vai soltando a pele e impurezas, remova esses resíduos de tempos em tempos com uma peneira até ficar bem limpo e sem pele. Escorra e passe no processador até virar uma massa. Misture 1kg dessa massa com a cebola processada e sal a gosto. Mexa essa mistura com uma colher de pau por aproximadamente 15 minutos, até ficar bem macia. Em um tacho para fritura de acarajé, aqueça o azeite de dendê. Quando o azeite estiver bem quente, coloque a cebola inteira sem casca para dar sabor à fritura. Com o auxílio de 2 colheres grandes, molde a massa em formato de acarajé e frite bem dos dois lados, até ficar bem dourado"
+    }
+]

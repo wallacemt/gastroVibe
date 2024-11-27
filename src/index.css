@@ -15,3 +15,20 @@ body{
     height: 100vh;
     background-color: #F9F9F7;
 }
+
+::-webkit-scrollbar {
+    width:7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2C2F24;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff2a007a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF2A00;
+}
