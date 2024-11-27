@@ -43,7 +43,7 @@ export const VitrineCulinaria = () => {
         <>
             <Navbar />
 
-            <div className="py-5">
+            <div className="py-5 mt-5">
                 <h2 className="text-6xl font-semibold text-center text-principal mt-24 font-playfair relative">
                     <span className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 text-destaque text-3xl">
                         &#9733;

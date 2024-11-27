@@ -7,12 +7,20 @@ import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 
 export const BannerDeDivulgacao = ({ restaurant }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [loadedImages, setLoadedImages] = useState({});
 
     const toggleDropdown = () => setIsOpen(!isOpen);
 
+    const handleImageLoad = (index) => {
+        setLoadedImages((prevState) => ({
+            ...prevState,
+            [index]: true
+        }));
+    };
+
     return (
         <div className="relative w-full max-w-[600px] mb-10  rounded-lg">
-            <h2 className="text-3xl font-bold text-principal text-center mb-4 border-b-2 border-y-destaque">
+            <h2 className="text-3xl font-bold font-cormorant  text-principal text-center mb-4 border-b-2 border-y-destaque">
                 {restaurant.name}
             </h2>
             <Swiper
@@ -33,11 +41,24 @@ export const BannerDeDivulgacao = ({ restaurant }) => {
             >
                 {restaurant.images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <img
-                            src={image}
-                            alt={`Imagem do restaurante ${restaurant.name}`}
-                            className="w-full h-[400px] object-cover rounded-lg"
-                        />
+                        <div className="relative w-full h-[400px]">
+                            {!loadedImages[index] && (
+                                <div className="absolute inset-0 bg-gray-300 flex items-center justify-center rounded-lg">
+                                    <span className="text-gray-500">
+                                        Carregando...
+                                    </span>
+                                </div>
+                            )}
+                            <img
+                                src={image}
+                                alt={`Imagem do restaurante ${restaurant.name}`}
+                                className={`w-full h-[400px] object-cover rounded-lg transition-opacity duration-500 ${
+                                    loadedImages[index] ? "opacity-100" : "opacity-0"
+                                }`}
+                                loading="lazy"
+                                onLoad={() => handleImageLoad(index)}
+                            />
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

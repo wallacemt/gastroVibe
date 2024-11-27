@@ -12,12 +12,12 @@ export const BannerHome = () => {
     }, []);
 
     return (
-        <div className="relative w-full h-screen bg-[url('/back-home.jpg')] bg-cover bg-center">
+        <div className="relative w-screen h-screen bg-[url('/back-home.jpg')] bg-cover bg-center">
             <div className="absolute inset-0 bg-black opacity-45 blur-md"></div>
             
             <div className="relative z-10 flex items-center justify-center h-full text-center flex-col px-2 sm:px-8">
                 <h1
-                    className="text-5xl sm:text-6xl md:text-7xl font-playfair font-bold text-claro uppercase tracking-wide mb-6 drop-shadow-lg"
+                    className="text-4xl sm:text-6xl md:text-7xl font-playfair font-bold text-claro uppercase tracking-wide mb-6 drop-shadow-lg"
                     data-aos="fade-up" 
                 >
                     Explore o melhor da <span className="text-destaque">gastronomia</span> soteropolitana
@@ -32,10 +32,13 @@ export const BannerHome = () => {
                 </p>
 
                 <button
-                    className="bg-destaque text-claro font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[#812a21cc] transition-all duration-300 ease-in-out transform hover:scale-110"
+                    className="relative px-5 py-3 text-sm font-semibold uppercase tracking-widest border rounded-lg border-destaque bg-trasparent overflow-hidden shadow-none transition-all duration-200 ease-in hover: bg-destaque hover:shadow-[0_0_30px_5px_rgba(242,96,12,0.8)] hover:scale-110"
                     onClick={()=> navigate("/vitrine")}
                 >
-                    Comece sua jornada
+                    <span className="relative z-10 text-claro">Comece sua jornada</span>
+
+                   <span className="absolute top-[7%] left-0 h-[86%] w-0 bg-branco opacity-0 transform -skew-x-12 transition-all duration-500 ease-linear hover:opacity-100 hover:w-full"></span>
+
                 </button>
             </div>
         </div>
