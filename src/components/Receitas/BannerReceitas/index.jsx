@@ -1,13 +1,26 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
+import Aos from "aos";
 
 export const BannerReceitass = ({ recipe }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [loadedImages, setLoadedImages] = useState({});
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
 
     const handleModalToggle = () => {
         setIsModalOpen((prev) => !prev);
+    };
+
+    const handleImageLoad = (index) => {
+        setLoadedImages((prevState) => ({
+            ...prevState,
+            [index]: true,
+        }));
     };
 
     return (
@@ -19,7 +32,7 @@ export const BannerReceitass = ({ recipe }) => {
                 spaceBetween={50}
                 slidesPerView={1}
                 centeredSlides={true}
-                loop={true}
+                loop={false}
                 pagination={{
                     clickable: true,
                     renderBullet: (index, className) =>
@@ -32,11 +45,22 @@ export const BannerReceitass = ({ recipe }) => {
             >
                 {recipe.images.map((url, index) => (
                     <SwiperSlide key={index}>
-                        <img
-                            src={url}
-                            alt={`Imagem da receita ${recipe.name}`}
-                            className="w-full h-[400px] object-cover rounded-lg"
-                        />
+                        <div className="relative w-full h-[400px]" data-aos="fade-up">
+                            {!loadedImages[index] && (
+                                    <div className="absolute inset-0 bg-gray-300 flex items-center justify-center rounded-lg">
+                                        <span className="text-gray-500">
+                                            Carregando...
+                                        </span>
+                                    </div>
+                            )}
+                            <img
+                                src={url}
+                                alt={`Imagem da receita ${recipe.name}`}
+                                className={`w-full h-[400px] object-cover rounded-lg transition-opacity duration-500 ${loadedImages[index] ? "opacity-100" : "opacity-0"}`}
+                                loading="lazy"
+                                onLoad={() => handleImageLoad(index)}
+                            />
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

@@ -20,11 +20,10 @@ export const VitrineCulinaria = () => {
                 setRestaurants(data);
             } catch (err) {
                 setError(err.message);
-            } finally {
+            }finally {
                 setLoading(false);
             }
         };
-
         fetchRestaurants();
     }, []);
 
@@ -34,7 +33,7 @@ export const VitrineCulinaria = () => {
 
     if (error) {
         return (
-            <div className="text-center py-10 text-vermelho">Erro: {error}</div>
+            <div className="text-center py-10 text-vermelho">Erro Ao carregar os restaurantes.</div>
         );
     }
 

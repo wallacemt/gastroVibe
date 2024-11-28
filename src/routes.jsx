@@ -4,6 +4,7 @@ import { Home } from "./screens/Home";
 import { Vitrine } from "./screens/Vitrine";
 import { ReceitasScreen } from "./screens/Receitas";
 import { Sobre } from "./screens/Sobre";
+import { Contato } from "./screens/Contato";
 
 export const RouteApp = () => {
     return (
@@ -13,6 +14,7 @@ export const RouteApp = () => {
                 <Route path="/vitrine" element={<Vitrine />} />
                 <Route path="/receitas" element={<ReceitasScreen />} />
                 <Route path="/sobre" element={<Sobre />} />
+                <Route path="/contato" element={<Contato/>}/>
             </Routes>
         </BrowserRouter>
     );

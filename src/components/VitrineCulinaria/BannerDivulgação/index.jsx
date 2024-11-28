@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
@@ -10,7 +10,7 @@ export const BannerDeDivulgacao = ({ restaurant }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [loadedImages, setLoadedImages] = useState({});
 
-    React.useEffect(() => {
+    useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
     const toggleDropdown = () => setIsOpen(!isOpen);
