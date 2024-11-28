@@ -4,8 +4,10 @@ import { Navbar } from "../../components/Navbar";
 export const Home = () => {
     return (
         <>
-            <Navbar/>
-            <BannerHome/>
+            <div className="overflow-hidden">
+                <Navbar/>
+                <BannerHome/>
+            </div>
         </>
     );
 };

@@ -27,7 +27,6 @@ export const Navbar = () => {
                     </p>
                 </div>
 
-                {/* Desktop Navigation */}
                 <nav className="hidden md:flex flex-grow justify-end space-x-12">
                     <button
                         onClick={() => navigate("/sobre")}
@@ -55,8 +54,20 @@ export const Navbar = () => {
                     </button>
                 </nav>
 
-                {/* Mobile Menu */}
                 <div className="md:hidden">
+
+                    <input id="toggleChecker" type="checkbox" className="hidden" />
+                    <label
+                        htmlFor="toggleChecker"
+                        className="cursor-pointer flex flex-col gap-2"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        style={{ position: "fixed", zIndex: 9999, right: "20px", top: "2em" }}
+                    >
+                        <div className={`h-1 w-8 bg-destaque transition-transform ${isMenuOpen && "rotate-45 translate-y-2"}`}></div>
+                        <div className={`h-1 w-8 bg-destaque transition-transform ${isMenuOpen && "hidden"}`}></div>
+                        <div className={`h-1 w-8 bg-destaque transition-transform ${isMenuOpen && "-rotate-45 -translate-y-1"}`}></div>
+                    </label>
+
                     <Menu
                         right
                         isOpen={isMenuOpen}
@@ -66,15 +77,7 @@ export const Navbar = () => {
                         overlayClassName="bg-dark bg-opacity-50"
                         styles={{
                             bmBurgerButton: {
-                                position: "absolute",
-                                zIndex: "9999",
-                                width: "30px",
-                                height: "24px",
-                                right: "15px",
-                                top: "10px",
-                            },
-                            bmBurgerBars: {
-                                background: "#AD343E",
+                                display: "none",
                             },
                             bmMenuWrap: {
                                 position: "fixed",
@@ -87,10 +90,12 @@ export const Navbar = () => {
                                 padding: "2em 1.5em",
                                 fontSize: "1.2em",
                                 boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
+                                overflow: "hidden",
                             },
                             bmItemList: {
                                 display: "flex",
                                 flexDirection: "column",
+                                marginTop: "2em",
                                 gap: "20px",
                             },
                             bmItem: {
