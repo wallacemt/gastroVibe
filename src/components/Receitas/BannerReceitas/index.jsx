@@ -61,7 +61,7 @@ export const BannerReceitass = ({ recipe }) => {
 
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 overflow-auto">
-                    <div className="bg-branco w-full h-full max-w-[1000px] max-h-[90%] p-8 rounded-lg shadow-lg relative overflow-auto">
+                    <div className="bg-branco w-full h-full max-w-[1000px] max-h-[100vh] p-6 rounded-lg shadow-lg relative overflow-auto">
                         <button
                             onClick={handleModalToggle}
                             className="absolute top-4 right-4 text-principal text-5xl font-bold hover:text-destaque transition duration-300"
@@ -101,7 +101,7 @@ export const BannerReceitass = ({ recipe }) => {
                         </h3>
                         <ul className="list-disc list-inside text-gray-700 text-lg leading-relaxed mb-6">
                             {recipe.ingredients.map((ingredient, index) => (
-                                <li key={index} className="mb-2">
+                                <li key={index} className="mb-2 text-principal font-bold">
                                     {ingredient}
                                 </li>
                             ))}
@@ -115,7 +115,7 @@ export const BannerReceitass = ({ recipe }) => {
                             {recipe.method_of_preparation
                                 .split(".")
                                 .map((step, index) => (
-                                    <li key={index} className="mb-3">
+                                    <li key={index} className="mb-3 text-principal font-medium">
                                         {step.trim()}.
                                     </li>
                                 ))}
