@@ -13,6 +13,7 @@ export default {
         branco: "#FFFFFF", 
         dark: "#182226", 
         destaque: "#AD343E",
+        destaqueT: "#F29F05",
         claro: "#F9F9F7", 
         cinzaEscuro: "#414536", 
       },

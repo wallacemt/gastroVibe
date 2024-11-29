@@ -20,7 +20,7 @@ export const BannerHome = () => {
                     className="text-4xl sm:text-6xl md:text-7xl font-playfair font-bold text-claro uppercase tracking-wide mb-6 drop-shadow-lg"
                     data-aos="fade-up" 
                 >
-                    Explore o melhor da <span className="text-destaque">gastronomia</span> soteropolitana
+                    Explore o melhor da <span className="text-destaqueT">gastronomia</span> soteropolitana
                 </h1>
 
                 <p
@@ -32,7 +32,7 @@ export const BannerHome = () => {
                 </p>
 
                 <button
-                    className="relative px-5 py-3 text-sm font-semibold uppercase tracking-widest border rounded-lg border-destaque bg-trasparent overflow-hidden shadow-none transition-all duration-200 ease-in hover: bg-destaque hover:shadow-[0_0_30px_5px_rgba(242,96,12,0.8)] hover:scale-110"
+                    className="relative px-5 py-3 text-[1.2em] font-semibold uppercase tracking-widest border rounded-lg border-destaqueT bg-trasparent overflow-hidden shadow-none transition-all duration-200 ease-in hover: bg-destaqueT hover:shadow-[0_0_30px_5px_rgba(242,96,12,0.8)] hover:scale-110"
                     onClick={()=> navigate("/vitrine")}
                 >
                     <span className="relative z-10 text-claro">Comece sua jornada</span>

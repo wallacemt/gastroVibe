@@ -20,5 +20,190 @@
             "150 g de camarão seco"
         ],
         "method_of_preparation": "Em uma tigela grande, hidrate o feijão fradinho quebrado com bastante água. Ao hidratar, o feijão vai soltando a pele e impurezas, remova esses resíduos de tempos em tempos com uma peneira até ficar bem limpo e sem pele. Escorra e passe no processador até virar uma massa. Misture 1kg dessa massa com a cebola processada e sal a gosto. Mexa essa mistura com uma colher de pau por aproximadamente 15 minutos, até ficar bem macia. Em um tacho para fritura de acarajé, aqueça o azeite de dendê. Quando o azeite estiver bem quente, coloque a cebola inteira sem casca para dar sabor à fritura. Com o auxílio de 2 colheres grandes, molde a massa em formato de acarajé e frite bem dos dois lados, até ficar bem dourado"
-    }
-]
+    },
+    {
+          "id": 2,
+          "name": "Moqueca de Peixe",
+          "description": "A moqueca é um prato típico da cozinha capixaba e baiana, feito com peixe, cebola, tomate e leite de coco, cozidos lentamente. A moqueca é famosa pela sua combinação única de temperos e sabores.",
+          "images": [
+            "https://minhasreceitinhas.com.br/wp-content/uploads/2022/06/moqueca-de-peixe-baiana-730x365.jpg",
+            "https://static.itdg.com.br/images/640-400/1ae0fdb277d066045833d9f418dc236c/94841-original.jpg",
+            "https://cdn0.tudoreceitas.com/pt/posts/0/8/9/moqueca_de_peixe_baiana_9980_orig.jpg"
+          ],
+          "video": "https://www.youtube.com/embed/z4PesuL98y8",
+          "ingredients": [
+            "1 kg de peixe em postas",
+            "2 limões (suco)",
+            "3 colheres de sopa de azeite de dendê",
+            "1 cebola grande picada",
+            "3 tomates maduros picados",
+            "1 pimentão vermelho picado",
+            "200 ml de leite de coco",
+            "Coentro e sal a gosto"
+          ],
+          "method_of_preparation": "Tempere o peixe com o suco de limão e sal. Em uma panela, aqueça o azeite de dendê, adicione a cebola, o pimentão e os tomates. Refogue até murchar. Coloque as postas de peixe, adicione o leite de coco e deixe cozinhar por cerca de 20 minutos em fogo baixo. Finalize com coentro picado e sirva com arroz."
+        },
+        {
+          "id": 3,
+          "name": "Moqueca Baiana",
+          "description": "Quem não ama uma moqueca baiana deliciosa?,Veja abaixo os ingredientes para preparar esta receita incrivel.",
+          "images": [
+            "https://static.itdg.com.br/images/640-400/037a65fddf2e9ebba83b5ca8c24bc4f4/164494-original.jpg",
+            "https://static.itdg.com.br/images/640-400/743952d0d1c6823df633037e8a40dbf9/77832-original.jpg",
+            "https://static.itdg.com.br/images/640-400/daeff70d658f098d98984f6a943658d6/180035-original.jpg"
+          ],
+          "video": "https://www.youtube.com/embed/R09d36yW7HY",
+          "ingredients": [
+            "Azeite de dendê",
+            "Coentro (talos e folhas)",
+            "Cebola",
+            "Pimentões (verdes,vermelhos e amarelos)",
+            "Tomate",
+            "Pimenta-de-cheiro",
+            "Cheiro-verde",
+            "Sal a gosto",
+            "Postas de peixe (peixes de cores,mais claras pela consistência e sabor como robalo , merluza ou cação)",
+            "Camarão seco e triturado",
+            "Leite de coco fresco",
+            "Arroz branco"
+          ],
+          "method_of_preparation": "Tempere as postas de peixe com limão, sal, alho e pimenta. Em uma panela, aqueça azeite de dendê e frite alho socado com sal. Adicione cebola, tomates, pimentão e pimenta, refogando por 5 minutos e, se necessário, adicione água. Coloque as postas de peixe no molho e deixe cozinhar por 10 minutos, pingando água se secar muito. Após o peixe estar cozido, adicione leite de coco e coentro picado. Reserve um pouco do caldo para fazer pirão com farinha de mandioca e sirva acompanhado de arroz branco."
+        },
+        {
+            "id": 4,
+            "name": "Abará",
+            "description": "O abará é um prato típico da culinária baiana, feito com massa de feijão fradinho, cebola, sal e azeite de dendê, envolto em folhas de bananeira e cozido no vapor. É uma deliciosa opção para quem gosta da comida nordestina.",
+            "images": [
+                "https://www.receiteria.com.br/wp-content/uploads/2020/08/abara.jpg",
+                "https://www.panelaterapia.com/wp-content/uploads/2018/05/abara.jpg",
+                "https://www.cozinhadadona.com/wp-content/uploads/2021/09/Abara.jpg"
+            ],
+            "video": "https://www.youtube.com/embed/kXO6Ls4jx9g",
+            "ingredients": [
+                "500g de feijão fradinho",
+                "1 cebola média picada",
+                "Sal a gosto",
+                "Azeite de dendê a gosto",
+                "Folhas de bananeira para envolver"
+            ],
+            "method_of_preparation": "Deixe o feijão fradinho de molho por 12 horas. Depois, escorra e bata no liquidificador com um pouco de água até formar uma massa homogênea. Misture a cebola, o sal e o azeite de dendê. Coloque a massa em folhas de bananeira e feche. Cozinhe no vapor por cerca de 30-40 minutos."
+        },
+        {
+            "id": 5,
+            "name": "Cocada",
+            "description": "A cocada é um doce brasileiro feito com coco ralado e açúcar, que pode ser preparado de várias formas. É um doce que agrada a todos, com sua textura macia e sabor marcante.",
+            "images": [
+                "https://www.receiteria.com.br/wp-content/uploads/2020/08/cocada.jpg",
+                "https://www.panelaterapia.com/wp-content/uploads/2020/06/cocada-simples.jpg",
+                "https://www.danielbasso.com.br/wp-content/uploads/2021/01/cocadas.jpg"
+            ],
+            "video": "https://www.youtube.com/embed/wzEzFdspu-c",
+            "ingredients": [
+                "200g de coco ralado",
+                "1 xícara de açúcar",
+                "1/2 xícara de água",
+                "1 colher de sopa de manteiga"
+            ],
+            "method_of_preparation": "Em uma panela, misture o açúcar e a água, levando ao fogo até formar uma calda. Depois, adicione o coco ralado e a manteiga. Cozinhe, mexendo sempre, até a mistura soltar do fundo da panela. Espalhe em uma superfície untada e corte em pedaços quando esfriar."
+        },
+        {
+            "id": 6,
+            "name": "Bolinho de Estudante",
+            "description": "O bolinho de estudante é um famoso doce brasileiro, feito com uma mistura de massa de bolo e recheio de goiabada ou doce de leite, fritos até ficarem dourados. É uma iguaria apreciada em festas e comemorações.",
+            "images": [
+                "https://www.receiteria.com.br/wp-content/uploads/2020/08/bolinho-de-estudante.jpg",
+                "https://www.receitas.com/wp-content/uploads/2021/01/bolinho-de-estudante.jpg",
+                "https://www.panelaterapia.com/wp-content/uploads/2021/05/bolinho-de-estudante-2.jpg"
+            ],
+            "video": "https://www.youtube.com/embed/hW6eU6Ke8yI",
+            "ingredients": [
+                "2 xícaras de farinha de trigo",
+                "1 xícara de açúcar",
+                "1/2 xícara de leite",
+                "1 ovo",
+                "1 colher de sopa de fermento em pó",
+                "Goiabada ou doce de leite para rechear",
+                "Óleo para fritar"
+            ],
+            "method_of_preparation": "Misture a farinha, o açúcar, o leite, o ovo e o fermento até obter uma massa homogênea. Aqueça o óleo em uma frigideira. Com uma colher, pegue uma porção da massa, coloque um pedaço de goiabada ou doce de leite no meio e cubra com mais massa. Frite até os bolinhos ficarem dourados. Escorra em papel toalha."
+        },
+        {
+            "id": 7,
+            "name": "Farofa de Banana",
+            "description": "Uma combinação deliciosa de farofa feita com farinha de mandioca, banana da terra e temperos, ideal para acompanhar carnes.",
+            "images": [
+                "https://www.receitas.com/wp-content/uploads/2021/06/farofa-de-banana.jpg",
+                "https://www.panelaterapia.com/wp-content/uploads/2021/08/farofa-de-banana.jpg",
+                "https://www.receiteria.com.br/wp-content/uploads/2020/11/farofa.jpg"
+            ],
+            "video": "https://www.youtube.com/embed/9sSUk0X1WhE",
+            "ingredients": [
+                "2 bananas da terra",
+                "2 xícaras de farinha de mandioca",
+                "1 cebola",
+                "1 colher de sopa de manteiga",
+                "Sal a gosto",
+                "Cheiro-verde a gosto"
+            ],
+            "method_of_preparation": "Refogue a cebola na manteiga. Adicione as bananas picadas e deixe dourar. Misture a farinha de mandioca e tempere com sal e cheiro-verde. Sirva como acompanhamento."
+        },
+        {
+            "id": 8,
+            "name": "Vatapá",
+            "description": "Um creme rico e saboroso, feito com pão, leite de coco, amendoim e azeite de dendê, muito utilizado como acompanhamento de pratos baianos.",
+            "images": [
+                "https://www.receitas.com/wp-content/uploads/2021/02/vatapa.jpg",
+                "https://www.panelaterapia.com/wp-content/uploads/2021/03/vatapa.jpg",
+                "https://www.receiteria.com.br/wp-content/uploads/2020/09/vatapa.jpg"
+            ],
+            "video": "https://www.youtube.com/embed/0fuI-ggWWU4",
+            "ingredients": [
+                "4 fatias de pão amanhecido",
+                "400 ml de leite de coco",
+                "100 g de amendoim",
+                "50 g de castanha-de-caju",
+                "1 cebola",
+                "1 dente de alho",
+                "100 ml de azeite de dendê",
+                "Sal e coentro a gosto"
+            ],
+            "method_of_preparation": "Deixe o pão de molho no leite de coco. Triture o amendoim e a castanha. Refogue a cebola e o alho no azeite de dendê. Misture todos os ingredientes, adicione sal e coentro, e cozinhe até obter uma consistência cremosa."
+        },
+        {
+            "id": 9,
+            "name": "Bolo de Rolo",
+            "description": "Uma das sobremesas mais conhecidas da Bahia, o bolo de rolo é feito com camadas finas de massa e doce de goiabada, enrolado como um rocambole.",
+            "images": [
+                "https://www.receitas.com/wp-content/uploads/2020/01/bolo-de-rolo-2.jpg",
+                "https://www.panelaterapia.com/wp-content/uploads/2021/06/bolo-de-rolo.jpg",
+                "https://www.receiteria.com.br/wp-content/uploads/2020/09/bolo-de-rolo.jpg"
+            ],
+            "video": "https://www.youtube.com/embed/0EasLf6_k64",
+            "ingredients": [
+                "4 ovos",
+                "1 xícara de açúcar",
+                "1/2 xícara de manteiga",
+                "1 1/2 xícaras de farinha de trigo",
+                "1/2 xícara de goiabada derretida"
+            ],
+            "method_of_preparation": "Bata os ovos e o açúcar até formar um creme. Adicione a manteiga e a farinha. Em uma assadeira retangular, espalhe uma camada fina de massa e cubra com a goiabada. Enrole e leve ao forno pré-aquecido por 30 minutos."
+        },
+        {
+            "id": 10,
+            "name": "Beiju",
+            "description": "O beiju é uma iguaria típica da culinária brasileira, especialmente apreciada no Nordeste. Feito com fécula de mandioca, é uma opção deliciosa e sem glúten que pode ser recheada com diferentes ingredientes.",
+            "images": [
+                "https://www.receitas.com/wp-content/uploads/2021/07/beiju-de-mandioca.jpg",
+                "https://www.panelaterapia.com/wp-content/uploads/2022/01/beiju-de-mandioca.jpg",
+                "https://www.receiteria.com.br/wp-content/uploads/2020/04/beiju.jpg"
+            ],
+            "video": "https://www.youtube.com/embed/9_zG-UGuZsE",
+            "ingredients": [
+                "2 xícaras de fécula de mandioca",
+                "1/2 xícara de água",
+                "1 pitada de sal",
+                "Recheios a gosto (queijo coalho, coco ralado, chocolate, entre outros)"
+            ],
+            "method_of_preparation": "Misture a fécula de mandioca com a água e o sal até obter uma massa homogênea. Em uma frigideira aquecida e untada, coloque uma camada fina da massa e cozinhe até que comece a soltar das bordas. Recheie conforme desejado, dobre o beiju e sirva quente."
+        }
+    ]

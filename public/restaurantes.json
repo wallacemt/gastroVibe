@@ -99,5 +99,72 @@
             "https://lh5.googleusercontent.com/p/AF1QipNsLEJ1311tMiyPAwnxBMp76UmF-MNtd-qGcAZa=s435-k-no"
         ],
         "googleMapsLink": "https://maps.app.goo.gl/fzMofEsWhUjzxhqFA"
-    }
+    },
+    {
+        "id": 6 ,
+        "name": "Oxente Bistrô" ,
+        "description": "Gastronomia Potiguar.Servir alimentos de boa qualidade com rapidez, cordialidade e acima de tudo, respeito" ,
+        "address":"R. das Portas do Carmo, 3 - Pelourinho, Salvador - BA",
+        "phone":"+55 71 9215-8705" ,
+        "opening_hours": "Todos os dias: 07:00 - 22:00, sexta, sábado e domingo 07:00 - 00:00",
+        "images": [
+           "https://lh5.googleusercontent.com/p/AF1QipN78h25g8rjJp0mqJWg3CRzCpMbrnsUXtw8eCZp=s677-k-no",
+           "https://lh5.googleusercontent.com/p/AF1QipPeE0Gx7scrPDGkccJORMe0yg8z5uoAtamunCsU=s677-k-no",
+           "https://lh5.googleusercontent.com/p/AF1QipMFLh9Qg0owMcb85vm5ma-yBmF3G04zDV0t6ZJX=s677-k-no",
+           "https://lh5.googleusercontent.com/p/AF1QipP05VnuvMYvW4V5TLr-DQG9pHXu_szBdrr2NF5V=s508-k-no",
+           "https://lh5.googleusercontent.com/p/AF1QipP6dHxZ2SlDJK8rgln8kFZJ2IuSzkerSbGEIGWN=s508-k-no"
+        ]
+    },
+    {
+        "id": 7  ,
+        "name": "Mahi Mahi Bar e Restaurante" ,
+        "description": "Restaurante com teleférico é construído sobre o mar e tem menu variado de pescados e diversões aquáticas." ,
+        "address":"Av. Sete de Setembro, 2068 - Vitória, Salvador - BA",
+        "phone":"+55 71 9121-8413" ,
+        "opening_hours": "Todos os dias: 10:00 - 19:00",
+        "images": [
+           "https://lh5.googleusercontent.com/p/AF1QipNr-3nhYdyngzwGUIfKtUyoAnMghrIrDuCVz5k6=s1536",
+           "https://lh5.googleusercontent.com/p/AF1QipNjY_GvgoPwZ1YqPi3tWDT5xUTLer3rD_klliHa=s508-k-no",
+           "https://lh5.googleusercontent.com/p/AF1QipOcLXFQ-8HiTi17E5rMX-aFFmn0gK9zvVEbMvWc=s1024",
+           "https://lh5.googleusercontent.com/p/AF1QipOcYHm8W_cDD-Y3I2J6opgKnzLwuvvNCbKOhKF1=s628-k-no",
+           "https://lh5.googleusercontent.com/p/AF1QipPaOpFIQX_T3o_uWeBP8FiFPUtlaEoEOXVFoqhG=s508-k-no",
+           "https://lh5.googleusercontent.com/p/AF1QipNquSu6RoizwSlF45bcGLsxkAWjqPsoTeQxi61Q=s508-k-no"
+           ],
+        "googleMapsLink": "https://maps.app.goo.gl/v4oj8tWPqez9h16z6"
+    },
+    {
+       "id": 8 , 
+       "name":"Dona mariquita",
+       "description":"Dentre os principais pratos, estão o acarajé com vatapá, além da famosa poqueca, que se difere da moqueca por ser servida em folha de bananeira",
+       "address":"R. do Meio, 178 – Rio Vermelho, Salvador – BA, 41490-426",
+       "phone":"71 3334-6947",
+       "opening_hours":"todos os dias :12:00 - 17:00",
+       "images": [ 
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgvScAO43O8QPV3dDYv6RuVSr7YOwmJl7EMjwTjBt1GHeET-N35l6Qv7Sd81DkQpdMb51HpXk_X4byFiaRxw4sQXd1D2KDuNt50kYYPllYudgRppdQXgYoTQtOUJOaLcjEoXctGxq911zhmCv6eO1x3SU_6RYUYp4Qvhefe83tHK_H8Z9Ml5BWKPC3S=w640-h480",
+        "https://aloalobahia.com/images/p/donamariquitacozinhaancestral_alo_alo_bahia.jpg",
+        "https://aloalobahia.com/images/p/mariquitie_alo_alo_bahia.jpg",
+        "https://lh5.googleusercontent.com/p/AF1QipMJALEx6redXH7d2Ef01EIE98UaNIczM1m7oB0t=s1024",
+        "https://lh5.googleusercontent.com/p/AF1QipMotidfqVhRaUrpD6FoKjzMnAwafDq16oMga6rj=w600-h450-p-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipOT-Vyfbb4mzq3XdFXzn9rgb6p-9lHI9QD4fxV8=w529-h298-k-no"
+        ],
+        "googleMapsLink": "https://maps.app.goo.gl/YEhXPCHxbUsZQ7j78"
+       
+    },
+     {
+        "id": 9 , 
+       "name":"Bar da monica",
+       "description":"O restaurante é simples, fica em um píer e tem uma escadinha que dá no mar. Frequentemente, há um som bem alto, onde se reúnem moradores, turistas e navegantes. Experimente a moqueca de lagosta com camarão e peixe.",
+       "address":"Na gamboa de baixo,coladinha a comunidade solar da unhão",
+       "phone":"71 3336-9728",
+       "opening_hours":"07:30 ás 18:30 TODOS os dias!",
+       "images": [
+        "https://lh5.googleusercontent.com/p/AF1QipMIk2AZaKBy5HY2AxNENiH_GROXgOZ2NgmMwwpI=s1536",
+        "https://aloalobahia.com/wp-content/uploads/2024/04/bardamonica.jpg",
+        "https://lh5.googleusercontent.com/p/AF1QipM-whrQ_Ur17AEONJ3N7AMa0cC03AbQOe6vMYWh=s508-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipPsNXZ1XpcIGzXv6oKYMUmMyMjw2rwZI3NcZD_b=s338-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipNI_lKfqBDWnsDxqs1O753dqqIdN3TUR6QDP30=s677-k-no",
+        "https://lh5.googleusercontent.com/p/AF1QipNIRnOAERStNyTPO2DofuZj-TVyGx7ocvh5beWM=s387-k-no"
+        ],
+        "googleMapsLink": "https://maps.app.goo.gl/hop3HwiCKS72KVgS6"
+     }
 ]
