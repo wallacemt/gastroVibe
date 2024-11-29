@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import { Home } from "./screens/Home";
 import { Vitrine } from "./screens/Vitrine";
@@ -10,13 +10,14 @@ export const RouteApp = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route index element={<Home />} />
                 <Route path="/vitrine" element={<Vitrine />} />
                 <Route path="/receitas" element={<ReceitasScreen />} />
                 <Route path="/sobre" element={<Sobre />} />
-                <Route path="/contato" element={<Contato/>}/>
+                <Route path="/contato" element={<Contato />} />
             </Routes>
         </BrowserRouter>
     );
 };
+
 
