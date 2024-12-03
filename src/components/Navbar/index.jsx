@@ -22,7 +22,7 @@ export const Navbar = () => {
                         aria-label="GastroVibe logo"
                     ></div>
 
-                    <p className="text-2xl font-playfair font-bold tracking-wider text-destaque">
+                    <p className="text-2xl font-playfair font-bold tracking-wider text-destaque uppercase">
                         GastroVibe
                     </p>
                 </div>
@@ -30,25 +30,25 @@ export const Navbar = () => {
                 <nav className="hidden md:flex flex-grow justify-end space-x-12">
                     <button
                         onClick={() => navigate("/sobre")}
-                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4"
+                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4 uppercase"
                     >
                         Sobre
                     </button>
                     <button
                         onClick={() => navigate("/vitrine")}
-                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4"
+                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4 uppercase"
                     >
                         Vitrine Culinária
                     </button>
                     <button
                         onClick={() => navigate("/receitas")}
-                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4"
+                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4 uppercase"
                     >
                         Receitas
                     </button>
                     <button
                         onClick={() => navigate("/contato")}
-                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4"
+                        className="text-principal font-semibold text-lg hover:text-destaque transition-all duration-300 hover:underline decoration-destaque decoration-2 underline-offset-4 uppercase"
                     >
                         Contato
                     </button>
@@ -108,6 +108,7 @@ export const Navbar = () => {
                                 borderRadius: "0.25rem",
                                 transition: "color 0.3s, background 0.3s",
                                 borderBottom: "2px solid #AD343E",
+                                textTransform: "uppercase",
                             },
                             bmOverlay: {
                                 background: "rgba(0, 0, 0, 0.5)",
