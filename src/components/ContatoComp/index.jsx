@@ -56,7 +56,7 @@ export const ContatoComp = () => {
                             Entre em Contato
                         </h2>
                         <a
-                            href="https://wa.me/5511999999999"
+                            href="https://wa.me/5571992581081?text=Gostaria%20de%20divulgar%20meu%20restaurante!"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg mt-4 w-full text-[1.2em]"
