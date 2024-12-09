@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BannerDeDivulgacao } from "./BannerDivulgação";
 import { Loading } from "../Loading";
 import { Navbar } from "../Navbar";
+import { ImSearch } from "react-icons/im";
+
 export const VitrineCulinaria = () => {
     const [restaurants, setRestaurants] = useState([]);
+    const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [search, setSearch] = useState("");
+    const [isSearching, setIsSearching] = useState(false);
 
     useEffect(() => {
         const fetchRestaurants = async () => {
@@ -18,9 +23,10 @@ export const VitrineCulinaria = () => {
                 }
                 const data = await response.json();
                 setRestaurants(data);
+                setFilteredRestaurants(data);
             } catch (err) {
                 setError(err.message);
-            }finally {
+            } finally {
                 setLoading(false);
             }
         };
@@ -36,6 +42,18 @@ export const VitrineCulinaria = () => {
             <div className="text-center py-10 text-vermelho">Erro Ao carregar os restaurantes.</div>
         );
     }
+
+    
+
+    const handleButtonClick = () => {
+        setIsSearching(true);
+        const filtered = restaurants.filter(
+            (restaurant) =>
+                restaurant.name.toLowerCase().includes(search.toLowerCase())
+        );
+        setFilteredRestaurants(filtered);
+        setIsSearching(false);
+    };
 
     return (
         <>
@@ -53,9 +71,24 @@ export const VitrineCulinaria = () => {
                 </h2>
             </div>
 
-            <div className="px-6 py-10">
-                <div className="flex flex-wrap justify-center gap-6">
-                    {restaurants.map((restaurant, index) => (
+            <div className="px-6 py-2">
+                <div className="flex justify-center">
+                    <input
+                        type="text"
+                        className="w-1/2 px-4 py-2 rounded-md border-2 border-destaque"
+                        placeholder="Pesquise por um restaurante"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                    />
+                    <button
+                        className="ml-2 px-4 py-2 rounded-md border-2 border-destaque hover:bg-destaque hover:text-branco"
+                        onClick={handleButtonClick}
+                    >
+                        {isSearching ? <ImSearch className="animate-spin" /> : <ImSearch />}
+                    </button>
+                </div>
+                <div className="flex flex-wrap justify-center gap-6 mt-10">
+                    {filteredRestaurants.map((restaurant, index) => (
                         <BannerDeDivulgacao
                             key={index}
                             restaurant={restaurant}
@@ -66,3 +99,4 @@ export const VitrineCulinaria = () => {
         </>
     );
 };
+
