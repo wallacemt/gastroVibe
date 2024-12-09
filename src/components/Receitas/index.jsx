@@ -60,28 +60,29 @@ export const Receitas = () => {
       </div>
 
       <div className="px-6 py-2">
-            <div className="flex justify-center mb-4">
-                <input
-                    type="text"
-                    className="w-1/2 px-4 py-2 rounded-md border-2 border-destaque"
-                    placeholder="Pesquise por uma receita..."
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                />
-                <button
-                    className="ml-2 px-4 py-2 rounded-md border-2 border-destaque hover:bg-destaque hover:text-branco"
-                    onClick={handleButtonClick}
-                >
-                    {isSearching ? <ImSearch className="animate-spin" /> : <ImSearch />}
-                </button>
-            </div>
+        <div className="flex justify-center mb-4">
+          <input
+            type="text"
+            className="w-1/2 px-4 py-2 rounded-md border-2 border-destaque"
+            placeholder="Pesquise por uma receita..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <button
+            className="ml-2 px-4 py-2 rounded-md border-2 border-destaque hover:bg-destaque hover:text-branco"
+            onClick={handleButtonClick}
+          >
+            {isSearching ? <ImSearch className="animate-spin" /> : <ImSearch />}
+          </button>
+        </div>
 
-            <div className="flex flex-wrap justify-center gap-6">
-            {recipes.map((recipes) => (
-                <BannerReceitass key={recipes.id} recipe={recipes} />
-            ))}
-            </div>
+        <div className="flex flex-wrap justify-center gap-6">
+          {filteredRecipes.map((recipe) => (
+            <BannerReceitass key={recipe.id} recipe={recipe} />
+          ))}
+        </div>
       </div>
     </>
   );
 };
+
